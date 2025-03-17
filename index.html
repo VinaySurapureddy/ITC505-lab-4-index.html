@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensitivity Analysis of PROMETHEE II</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.5; /* Adjusted line height for compactness */
+            margin: 0;
+            padding: 0;
+            background-color: #e8f4f8; /* Light blue background for the entire page */
+            color: #333;
+            min-height: 100vh; /* Ensure body covers the full viewport height */
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 20px; /* Reduced padding */
+            text-align: center;
+            margin-bottom: 20px; /* Reduced margin */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em; /* Reduced font size */
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1em; /* Reduced font size */
+        }
+
+        /* Article Styles */
+        article {
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            padding: 15px; /* Reduced padding */
+            margin: 15px auto; /* Reduced margin */
+            max-width: 800px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        article h2 {
+            color: #764ba2;
+            margin-top: 20px; /* Reduced margin */
+            margin-bottom: 10px; /* Reduced margin */
+            font-size: 1.5em; /* Reduced font size */
+            font-weight: 600;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        article p {
+            margin: 10px 0; /* Reduced margin */
+            font-size: 0.95em; /* Reduced font size */
+            color: #555;
+        }
+
+        article ul {
+            margin: 10px 0; /* Reduced margin */
+            padding-left: 20px; /* Reduced padding */
+        }
+
+        article li {
+            margin: 8px 0; /* Reduced margin */
+            font-size: 0.95em; /* Reduced font size */
+            color: #555;
+        }
+
+        article a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        article a:hover {
+            text-decoration: underline;
+            color: #764ba2;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 15px; /* Reduced padding */
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            margin-top: 20px; /* Reduced margin */
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em; /* Reduced font size */
+        }
+
+        /* Addendum-specific Styles */
+        .addendum {
+            background: rgba(249, 249, 249, 0.9); /* Semi-transparent light gray background */
+            border-left: 5px solid #764ba2;
+            padding: 15px; /* Reduced padding */
+            margin-top: 15px; /* Reduced margin */
+        }
+
+        .addendum h2 {
+            color: #667eea;
+        }
+
+        .addendum ul {
+            list-style-type: square;
+        }
+
+        .addendum li {
+            margin: 8px 0; /* Reduced margin */
+        }
+
+        #lastModified {
+            font-weight: bold;
+            color: #ffdd57;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sensitivity Analysis of PROMETHEE II</h1>
+        <p><strong>Authors:</strong> Katerina Kabassi, Aristotelis Martinis</p>
+        <p><strong>Published in:</strong> Applied Sciences, Vol. 11, No. 19, 2021</p>
+    </header>
+
+    <article>
+        <h2>Abstract</h2>
+        <p>The quality of content and the attractiveness of an environmental website can create an environmentally friendly attitude before one visits a secured area. Web applications, accessible via browsers over the Internet, have evolved significantly from static repositories to dynamic collaborative platforms. This study highlights advancements in web evaluation and modeling techniques like PROMETHEE II and its role in decision-making.</p>
+
+        <h2>Introduction</h2>
+        <p>The World Wide Web transitioned from static, non-interactive Web 1.0 into dynamic Web 2.0 environments. The evolution has influenced how environmental websites are built and assessed for their impact on user engagement and decision-making processes.</p>
+
+        <h2>Foundations of Web Analysis</h2>
+        <p>This section evaluates key principles like URLs for resource identification, HTML for structuring content, and HTTP as the communication protocol. These principles underlie the ability to standardize and assess web functionality and impact effectively.</p>
+
+        <h2>Future Trends</h2>
+        <p>The paper explores how semantic technologies can better structure unstructured data on websites. Enhancements to frameworks like PROMETHEE II improve decision-making by offering more robust and scalable approaches for data modeling and user interaction.</p>
+
+        <h2>Conclusion</h2>
+        <p>In conclusion, web applications continue to evolve, focusing on agility, user engagement, and scalable data management. Evaluations like those offered by PROMETHEE II provide valuable insights for improving environmental websites and their influence on user behavior.</p>
+    </article>
+
+    <article>
+        <h2>Bibliography</h2>
+        <p>
+            Kabassi, K., & Martinis, A. (2021). <i>Sensitivity Analysis of PROMETHEE II for the Evaluation of Environmental Websites</i>. Applied Sciences, 11(19), 9215. 
+            <a href="https://www.mdpi.com/2076-3417/11/19/9215" target="_blank">https://www.mdpi.com/2076-3417/11/19/9215</a>.
+        </p>
+    </article>
+
+    <article class="addendum">
+        <h2>Addendum</h2>
+        <p>This section explains the HTML and CSS choices made for structuring and styling the paper:</p>
+        <ul>
+            <li><strong>Header:</strong> The header uses a gradient background (`#667eea` to `#764ba2`) with white text and a shadow effect for emphasis. The font size and weight are increased to make the title stand out.</li>
+            <li><strong>Article:</strong> Articles have a semi-transparent white background (`rgba(255, 255, 255, 0.9)`) to allow the light blue page background to show through subtly.</li>
+            <li><strong>Headings:</strong> Headings (`h2`) use a gradient-inspired color (`#764ba2`) with a subtle shadow for visual appeal. The font size and weight are adjusted to make them stand out.</li>
+            <li><strong>Footer:</strong> The footer uses the same gradient as the header for consistency, with white text and a shadow effect. It includes a dynamically generated last modified date.</li>
+            <li><strong>CSS:</strong> The body has a light blue background color (`#e8f4f8`) for a calming and modern look. Links are styled with a gradient color and hover effects for interactivity.</li>
+        </ul>
+        <p><strong>Last updated:</strong> <span id="lastModified"></span></p>
+    </article>
+    
+    <footer>
+        <p>&copy; 2023 Sensitivity Analysis of PROMETHEE II. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        const lastModified = document.lastModified;
+        document.getElementById("lastModified").textContent = lastModified;
+    </script>
+</body>
+</html>
