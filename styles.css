@@ -4,26 +4,23 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9; /* Light gray background */
-    color: #333;
-    min-height: 100vh;
+    background-color: #fdf6e3; /* Warm beige background */
+    color: #333333; /* Dark charcoal text */
 }
 
 /* Header Styles */
 header {
-    background: linear-gradient(135deg, #4A90E2, #6A1B9A);
+    background-color: #800020; /* Deep burgundy */
     color: white;
-    padding: 30px;
     text-align: center;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5em;
     font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 header p {
@@ -33,21 +30,20 @@ header p {
 
 /* Article Styles */
 article {
-    background: #ffffff; /* White background */
-    padding: 20px;
+    background-color: #ffffff; /* White background */
     margin: 20px auto;
+    padding: 20px;
     max-width: 800px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 article h2 {
-    color: #6A1B9A;
-    margin-top: 15px;
+    color: #ff6f61; /* Coral for section headings */
+    margin-top: 0;
     margin-bottom: 15px;
     font-size: 1.8em;
     font-weight: 600;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 article p {
@@ -68,52 +64,51 @@ article li {
 }
 
 article a {
-    color: #4A90E2;
+    color: #800020; /* Deep burgundy for links */
     text-decoration: none;
     font-weight: 600;
 }
 
 article a:hover {
     text-decoration: underline;
-    color: #6A1B9A;
+    color: #ff6f61; /* Coral on hover */
+}
+
+/* Addendum Styles */
+#addendum {
+    background-color: #d8bfd8; /* Light lavender background */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#addendum h2 {
+    color: #800020; /* Deep burgundy for addendum heading */
+}
+
+#addendum ul {
+    list-style-type: square;
+}
+
+#addendum li {
+    margin: 10px 0;
 }
 
 /* Footer Styles */
 footer {
-    text-align: center;
-    padding: 20px;
-    background: linear-gradient(135deg, #4A90E2, #6A1B9A);
+    background-color: #800020; /* Deep burgundy */
     color: white;
-    margin-top: 30px;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-}
-
-footer p {
-    margin: 5px 0;
-    font-size: 1em;
-}
-
-/* Addendum-specific Styles */
-.addendum {
-    background: #ffffff; /* White background */
-    border-left: 5px solid #6A1B9A;
-    padding: 20px;
+    text-align: center;
+    padding: 15px;
     margin-top: 20px;
 }
 
-.addendum h2 {
-    color: #4A90E2;
+footer p {
+    margin: 0;
+    font-size: 1em;
 }
 
-.addendum ul {
-    list-style-type: square;
-}
-
-.addendum li {
-    margin: 10px 0;
-}
-
-#lastModified, #lastModifiedFooter {
+#lastModified {
     font-weight: bold;
-    color: #FFD700; /* Gold color for emphasis */
+    color: #ffdd57; /* Gold for last updated text */
 }
