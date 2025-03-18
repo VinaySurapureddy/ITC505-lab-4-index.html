@@ -43,9 +43,9 @@
         <p>This section explains the HTML and CSS choices made for structuring and styling the paper:</p>
         <ul>
             <li><strong>Font Choices:</strong> The primary font is <code>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif</code>, chosen for its modern and clean appearance. It ensures readability across devices and screen sizes.</li>
-            <li><strong>Heading and Text Sizes:</strong> The <code>h1</code> heading uses a font size of <code>2em</code>, while <code>h2</code> headings use <code>1.5em</code>. The main text size is <code>0.95em</code>, ensuring a compact yet readable layout.</li>
-            <li><strong>Color Choices:</strong> The header and footer use a gradient from <code>#667eea</code> to <code>#764ba2</code> for a modern and visually appealing look. The body background is a light blue (<code>#e8f4f8</code>), and article backgrounds are semi-transparent white (<code>rgba(255, 255, 255, 0.9)</code>) for subtle contrast.</li>
-            <li><strong>Margins and Padding:</strong> The body has no margin or padding to maximize space. Articles have <code>15px</code> padding and <code>15px</code> margins for spacing. Headings have reduced margins (<code>10px</code> top and bottom) to maintain a compact layout.</li>
+            <li><strong>Heading and Text Sizes:</strong> The <code>h1</code> heading uses a font size of <code>2.5em</code>, while <code>h2</code> headings use <code>1.8em</code>. The main text size is <code>1.1em</code>, ensuring a balanced and readable layout.</li>
+            <li><strong>Color Choices:</strong> The header and footer use a gradient from <code>#4A90E2</code> to <code>#6A1B9A</code> for a modern and visually appealing look. The body background is a light gray (<code>#f9f9f9</code>), and article backgrounds are white (<code>#ffffff</code>) for clarity.</li>
+            <li><strong>Margins and Padding:</strong> The body has no margin or padding to maximize space. Articles have <code>20px</code> padding and <code>20px</code> margins for spacing. Headings have margins of <code>15px</code> top and bottom to maintain a clean layout.</li>
             <li><strong>Semantic HTML:</strong> Proper semantic tags like <code>header</code>, <code>article</code>, and <code>footer</code> are used to structure the content logically. The <code>h1</code> tag is used for the main title, and <code>h2</code> for section headings, ensuring proper hierarchy.</li>
         </ul>
         <p><strong>Last updated:</strong> <span id="lastModified"></span></p>
@@ -53,11 +53,13 @@
     
     <footer>
         <p>&copy; 2023 Sensitivity Analysis of PROMETHEE II. All rights reserved.</p>
+        <p>Last updated: <span id="lastModifiedFooter"></span></p>
     </footer>
     
     <script>
-        const lastModified = document.lastModified;
+        const lastModified = new Date(document.lastModified).toLocaleDateString();
         document.getElementById("lastModified").textContent = lastModified;
+        document.getElementById("lastModifiedFooter").textContent = lastModified;
     </script>
 </body>
 </html>
