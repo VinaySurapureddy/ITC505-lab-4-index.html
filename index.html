@@ -4,127 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sensitivity Analysis of PROMETHEE II</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.5; /* Adjusted line height for compactness */
-            margin: 0;
-            padding: 0;
-            background-color: #e8f4f8; /* Light blue background for the entire page */
-            color: #333;
-            min-height: 100vh; /* Ensure body covers the full viewport height */
-        }
-
-        /* Header Styles */
-        header {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            padding: 20px; /* Reduced padding */
-            text-align: center;
-            margin-bottom: 20px; /* Reduced margin */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2em; /* Reduced font size */
-            font-weight: 700;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-        }
-
-        header p {
-            margin: 10px 0 0;
-            font-size: 1em; /* Reduced font size */
-        }
-
-        /* Article Styles */
-        article {
-            background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
-            padding: 15px; /* Reduced padding */
-            margin: 15px auto; /* Reduced margin */
-            max-width: 800px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-
-        article h2 {
-            color: #764ba2;
-            margin-top: 20px; /* Reduced margin */
-            margin-bottom: 10px; /* Reduced margin */
-            font-size: 1.5em; /* Reduced font size */
-            font-weight: 600;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-        }
-
-        article p {
-            margin: 10px 0; /* Reduced margin */
-            font-size: 0.95em; /* Reduced font size */
-            color: #555;
-        }
-
-        article ul {
-            margin: 10px 0; /* Reduced margin */
-            padding-left: 20px; /* Reduced padding */
-        }
-
-        article li {
-            margin: 8px 0; /* Reduced margin */
-            font-size: 0.95em; /* Reduced font size */
-            color: #555;
-        }
-
-        article a {
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        article a:hover {
-            text-decoration: underline;
-            color: #764ba2;
-        }
-
-        /* Footer Styles */
-        footer {
-            text-align: center;
-            padding: 15px; /* Reduced padding */
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            margin-top: 20px; /* Reduced margin */
-            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        footer p {
-            margin: 0;
-            font-size: 0.9em; /* Reduced font size */
-        }
-
-        /* Addendum-specific Styles */
-        .addendum {
-            background: rgba(249, 249, 249, 0.9); /* Semi-transparent light gray background */
-            border-left: 5px solid #764ba2;
-            padding: 15px; /* Reduced padding */
-            margin-top: 15px; /* Reduced margin */
-        }
-
-        .addendum h2 {
-            color: #667eea;
-        }
-
-        .addendum ul {
-            list-style-type: square;
-        }
-
-        .addendum li {
-            margin: 8px 0; /* Reduced margin */
-        }
-
-        #lastModified {
-            font-weight: bold;
-            color: #ffdd57;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -162,11 +42,11 @@
         <h2>Addendum</h2>
         <p>This section explains the HTML and CSS choices made for structuring and styling the paper:</p>
         <ul>
-            <li><strong>Header:</strong> The header uses a gradient background (`#667eea` to `#764ba2`) with white text and a shadow effect for emphasis. The font size and weight are increased to make the title stand out.</li>
-            <li><strong>Article:</strong> Articles have a semi-transparent white background (`rgba(255, 255, 255, 0.9)`) to allow the light blue page background to show through subtly.</li>
-            <li><strong>Headings:</strong> Headings (`h2`) use a gradient-inspired color (`#764ba2`) with a subtle shadow for visual appeal. The font size and weight are adjusted to make them stand out.</li>
-            <li><strong>Footer:</strong> The footer uses the same gradient as the header for consistency, with white text and a shadow effect. It includes a dynamically generated last modified date.</li>
-            <li><strong>CSS:</strong> The body has a light blue background color (`#e8f4f8`) for a calming and modern look. Links are styled with a gradient color and hover effects for interactivity.</li>
+            <li><strong>Font Choices:</strong> The primary font is <code>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif</code>, chosen for its modern and clean appearance. It ensures readability across devices and screen sizes.</li>
+            <li><strong>Heading and Text Sizes:</strong> The <code>h1</code> heading uses a font size of <code>2em</code>, while <code>h2</code> headings use <code>1.5em</code>. The main text size is <code>0.95em</code>, ensuring a compact yet readable layout.</li>
+            <li><strong>Color Choices:</strong> The header and footer use a gradient from <code>#667eea</code> to <code>#764ba2</code> for a modern and visually appealing look. The body background is a light blue (<code>#e8f4f8</code>), and article backgrounds are semi-transparent white (<code>rgba(255, 255, 255, 0.9)</code>) for subtle contrast.</li>
+            <li><strong>Margins and Padding:</strong> The body has no margin or padding to maximize space. Articles have <code>15px</code> padding and <code>15px</code> margins for spacing. Headings have reduced margins (<code>10px</code> top and bottom) to maintain a compact layout.</li>
+            <li><strong>Semantic HTML:</strong> Proper semantic tags like <code>header</code>, <code>article</code>, and <code>footer</code> are used to structure the content logically. The <code>h1</code> tag is used for the main title, and <code>h2</code> for section headings, ensuring proper hierarchy.</li>
         </ul>
         <p><strong>Last updated:</strong> <span id="lastModified"></span></p>
     </article>
