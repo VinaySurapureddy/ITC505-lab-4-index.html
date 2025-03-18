@@ -10,7 +10,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #800020; /* Deep burgundy */
+    background-color: #2E8B57; /* Deep green */
     color: white;
     text-align: center;
     padding: 20px;
@@ -39,7 +39,7 @@ article {
 }
 
 article h2 {
-    color: #ff6f61; /* Coral for section headings */
+    color: #E2725B; /* Terracotta for section headings */
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 1.8em;
@@ -64,26 +64,26 @@ article li {
 }
 
 article a {
-    color: #800020; /* Deep burgundy for links */
+    color: #2E8B57; /* Deep green for links */
     text-decoration: none;
     font-weight: 600;
 }
 
 article a:hover {
     text-decoration: underline;
-    color: #ff6f61; /* Coral on hover */
+    color: #E2725B; /* Terracotta on hover */
 }
 
 /* Addendum Styles */
 #addendum {
-    background-color: #d8bfd8; /* Light lavender background */
+    background-color: #D8BFD8; /* Soft lavender background */
     padding: 20px;
     border-radius: 8px;
     margin-top: 20px;
 }
 
 #addendum h2 {
-    color: #800020; /* Deep burgundy for addendum heading */
+    color: #2E8B57; /* Deep green for addendum heading */
 }
 
 #addendum ul {
@@ -96,7 +96,7 @@ article a:hover {
 
 /* Footer Styles */
 footer {
-    background-color: #800020; /* Deep burgundy */
+    background-color: #2E8B57; /* Deep green */
     color: white;
     text-align: center;
     padding: 15px;
@@ -110,5 +110,5 @@ footer p {
 
 #lastModified {
     font-weight: bold;
-    color: #ffdd57; /* Gold for last updated text */
+    color: #FFD700; /* Gold for last updated text */
 }
